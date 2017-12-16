@@ -1,0 +1,17 @@
+avatars.avatar_service.settings.avatars_ak_common:gravatar_identicon:
+  type: avatars.avatar_service_common_base
+
+avatars.avatar_service.settings.avatars_ak_common:gravatar_monster:
+  type: avatars.avatar_service_common_base
+
+avatars.avatar_service.settings.avatars_ak_common:gravatar_mystery_man:
+  type: avatars.avatar_service_common_base
+
+avatars.avatar_service.settings.avatars_ak_common:gravatar_retro:
+  type: avatars.avatar_service_common_base
+
+avatars.avatar_service.settings.avatars_ak_common:gravatar_universal:
+  type: avatars.avatar_service_common_base
+
+avatars.avatar_service.settings.avatars_ak_common:gravatar_wavatar:
+  type: avatars.avatar_service_common_base
