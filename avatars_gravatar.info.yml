@@ -1,0 +1,9 @@
+name: Gravatar
+type: module
+description: Gravatar integration for Avatar Kit
+core: 8.x
+package: Avatar Kit
+php: 7.1
+dependencies:
+  - drupal:system (>=8.4.x)
+  - avatars:avatars (>=2.x)

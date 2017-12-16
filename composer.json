@@ -1,0 +1,17 @@
+{
+  "name": "drupal/avatars_gravatar",
+  "type": "drupal-module",
+  "description": "Gravatar integration for Avatar Kit",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/avatars_gravatar",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/avatars_gravatar",
+    "source": "http://cgit.drupalcode.org/avatars_gravatar"
+  },
+  "require": {
+    "drupal/avatars": "^2@dev",
+    "dpi/ak_gravatar": "^1@dev"
+  }
+}
