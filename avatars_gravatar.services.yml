@@ -1,0 +1,5 @@
+services:
+  avatars_gravatar.avatar_service_plugin_info_alter:
+    class: Drupal\avatars_gravatar\AvatarsGravatarAvatarServicePluginInfoAlter
+    tags:
+      - { name: event_subscriber }

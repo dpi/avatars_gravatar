@@ -4,22 +4,3 @@
 * @file
 * Contains hooks for Gravatar.
 */
-
-use Drupal\avatars_gravatar\Plugin\Avatars\Service\Gravatar;
-
-/**
- * Implements hook_avatar_service_plugins_alter().
- *
- * @param array $services
- *   An array of services.
- */
-function avatars_gravatar_avatar_service_plugins_alter(array &$services) {
-  // Avatar Kit service plugin manager will pick up common services simply by
-  // making these services use a real class instead of an abstract.
-  $services['avatars_ak_common:gravatar_identicon']['class'] = Gravatar::class;
-  $services['avatars_ak_common:gravatar_monster']['class'] = Gravatar::class;
-  $services['avatars_ak_common:gravatar_mystery_man']['class'] = Gravatar::class;
-  $services['avatars_ak_common:gravatar_retro']['class'] = Gravatar::class;
-  $services['avatars_ak_common:gravatar_universal']['class'] = Gravatar::class;
-  $services['avatars_ak_common:gravatar_wavatar']['class'] = Gravatar::class;
-}
