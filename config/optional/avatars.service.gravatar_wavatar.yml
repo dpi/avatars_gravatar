@@ -1,0 +1,5 @@
+status: true
+dependencies: {  }
+id: gravatar_wavatar
+label: Wavatar
+plugin: 'avatars_ak_common:gravatar_wavatar'

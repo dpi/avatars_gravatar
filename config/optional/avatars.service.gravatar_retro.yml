@@ -1,0 +1,5 @@
+status: true
+dependencies: {  }
+id: gravatar_retro
+label: Retro
+plugin: 'avatars_ak_common:gravatar_retro'

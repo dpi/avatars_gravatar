@@ -1,0 +1,5 @@
+status: true
+dependencies: {  }
+id: gravatar_monster
+label: Monster
+plugin: 'avatars_ak_common:gravatar_monster'

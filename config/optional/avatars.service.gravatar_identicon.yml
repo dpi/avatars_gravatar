@@ -1,0 +1,5 @@
+status: true
+dependencies: {  }
+id: gravatar_identicon
+label: Identicon
+plugin: 'avatars_ak_common:gravatar_identicon'
