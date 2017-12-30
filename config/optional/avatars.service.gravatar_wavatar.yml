@@ -3,3 +3,7 @@ dependencies: {  }
 id: gravatar_wavatar
 label: Wavatar
 plugin: 'avatars_ak_common:gravatar_wavatar'
+settings:
+  width: null
+  height: null
+  protocol: https

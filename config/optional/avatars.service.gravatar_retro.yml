@@ -3,3 +3,7 @@ dependencies: {  }
 id: gravatar_retro
 label: Retro
 plugin: 'avatars_ak_common:gravatar_retro'
+settings:
+  width: null
+  height: null
+  protocol: https

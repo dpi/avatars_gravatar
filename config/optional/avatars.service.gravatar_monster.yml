@@ -3,3 +3,7 @@ dependencies: {  }
 id: gravatar_monster
 label: Monster
 plugin: 'avatars_ak_common:gravatar_monster'
+settings:
+  width: null
+  height: null
+  protocol: https

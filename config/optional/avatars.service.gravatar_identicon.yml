@@ -3,3 +3,7 @@ dependencies: {  }
 id: gravatar_identicon
 label: Identicon
 plugin: 'avatars_ak_common:gravatar_identicon'
+settings:
+  width: null
+  height: null
+  protocol: https
