@@ -1,5 +1,7 @@
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - avatars_gravatar
 id: gravatar_mystery_man
 label: Mystery Man
 plugin: 'avatars_ak_common:gravatar_mystery_man'

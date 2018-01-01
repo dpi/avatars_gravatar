@@ -21,15 +21,29 @@ class AvatarsGravatarAvatarServicePluginInfoAlter implements EventSubscriberInte
    *   The event.
    */
   public function alterServiceInfo(AvatarKitServiceDefinitionAlterEvent $event) {
-    // Avatar Kit service plugin manager will pick up common services simply by
-    // making these services use a real class instead of an abstract.
     $definitions = $event->getDefinitions();
-    $definitions['avatars_ak_common:gravatar_identicon']['class'] = Gravatar::class;
-    $definitions['avatars_ak_common:gravatar_monster']['class'] = Gravatar::class;
-    $definitions['avatars_ak_common:gravatar_mystery_man']['class'] = Gravatar::class;
-    $definitions['avatars_ak_common:gravatar_retro']['class'] = Gravatar::class;
-    $definitions['avatars_ak_common:gravatar_universal']['class'] = Gravatar::class;
-    $definitions['avatars_ak_common:gravatar_wavatar']['class'] = Gravatar::class;
+
+    $ids = [
+      'gravatar_identicon',
+      'gravatar_monster',
+      'gravatar_mystery_man',
+      'gravatar_retro',
+      'gravatar_universal',
+      'gravatar_wavatar',
+    ];
+
+    foreach ($ids as $id) {
+      $id = 'avatars_ak_common:' . $id;
+      // Avatar Kit service plugin manager will pick up common services simply by
+      // making these services use a real class instead of an abstract.
+      $definitions[$id]['class'] = Gravatar::class;
+
+      // Need to add a dependency to this module, since once this module is
+      // uninstalled, the common deriver will revert to the abstract class, which
+      // the plugin manager ignores.
+      $definitions[$id]['config_dependencies']['module'][] = 'avatars_gravatar';
+    }
+
     $event->setDefinitions($definitions);
   }
 
